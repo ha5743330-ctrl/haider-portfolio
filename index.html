@@ -563,6 +563,37 @@ flex-wrap:wrap;
 color:var(--text-muted);
 
 }
+.about-details{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+    margin-top:30px;
+}
+
+.detail-item{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:12px;
+    padding:15px 20px;
+    transition:.3s;
+}
+
+.detail-item:hover{
+    transform:translateY(-5px);
+    border-color:var(--primary-color);
+}
+
+.detail-item span{
+    display:block;
+    font-size:.85rem;
+    color:var(--neon-cyan);
+    margin-bottom:6px;
+}
+
+.detail-item strong{
+    font-size:1rem;
+    color:#fff;
+}
 
         /* --- RESPONSIVE MOBILE HANDLERS --- */
         @media (max-width: 1024px) {
@@ -661,11 +692,67 @@ color:var(--text-muted);
             </div>
         </div>
     </section>
+    <div class="about-info glass-card">
+
+    <h3>👨‍💻 About Me</h3>
+
+    <p>
+        I am <strong>Haider Ali</strong>, a passionate Computer Science graduate
+        specializing in Artificial Intelligence. I enjoy building modern,
+        responsive and intelligent web applications using the MERN Stack,
+        Python and AI technologies.
+    </p>
+
+    <div class="about-details">
+
+        <div class="detail-item">
+            <span>👤 Full Name</span>
+            <strong>Haider Ali</strong>
+        </div>
+
+        <div class="detail-item">
+            <span>🎓 Degree</span>
+            <strong>BS Computer Science (AI)</strong>
+        </div>
+
+        <div class="detail-item">
+            <span>🏫 University</span>
+            <strong>PMAS Arid Agriculture University</strong>
+        </div>
+
+        <div class="detail-item">
+            <span>📊 CGPA</span>
+            <strong>2.96 / 4.00</strong>
+        </div>
+
+        <div class="detail-item">
+            <span>📚 Intermediate</span>
+            <strong>Computer Science</strong>
+        </div>
+
+        <div class="detail-item">
+            <span>🏫 College</span>
+            <strong>Islamabad Career College Bharakahu isb</strong>
+        </div>
+
+        <div class="detail-item">
+            <span>📍 Location</span>
+            <strong>Islamabad, Pakistan</strong>
+        </div>
+
+        <div class="detail-item">
+            <span>📧 Email</span>
+            <strong>ha5743330@gmail.com</strong>
+        </div>
+
+    </div>
+
+</div>
 
 <div class="counter-row">
 
     <div class="counter-box">
-        <h2 class="counter" data-target="5">0</h2>
+        <h2 class="counter" data-target="5">5</h2>
         <p>Internships In Progress</p>
     </div>
 
@@ -687,41 +774,113 @@ color:var(--text-muted);
     </ul>
 </div>
 
-    <!-- 3. SKILLS SECTION -->
-    <section id="skills" class="reveal">
-        <h2 class="section-title">[02] NEURAL_CAPABILITIES</h2>
-        <div class="skills-grid">
-            <div class="skill-card glass-card">
-                <div class="skill-header">
-                    <span><i class="fab fa-node-js"></i> Node.js & Express</span>
-                    <span class="skill-pct">88%</span>
-                </div>
-                <div class="p-bar-bg"><div class="p-bar-fill" data-width="88%"></div></div>
+<!-- 3. SKILLS SECTION -->
+<section id="skills" class="reveal">
+    <h2 class="section-title">[02] NEURAL_CAPABILITIES</h2>
+
+    <div class="skills-grid">
+
+        <!-- HTML -->
+        <div class="skill-card glass-card">
+            <div class="skill-header">
+                <span><i class="fab fa-html5"></i> HTML5</span>
+                <span class="skill-pct">95%</span>
             </div>
-            <div class="skill-card glass-card">
-                <div class="skill-header">
-                    <span><i class="fab fa-react"></i> React Framework</span>
-                    <span class="skill-pct">85%</span>
-                </div>
-                <div class="p-bar-bg"><div class="p-bar-fill" data-width="85%"></div></div>
-            </div>
-            <div class="skill-card glass-card">
-                <div class="skill-header">
-                    <span><i class="fab fa-python"></i> Python (CV / Automation)</span>
-                    <span class="skill-pct">95%</span>
-                </div>
-                <div class="p-bar-bg"><div class="p-bar-fill" data-width="95%"></div></div>
-            </div>
-            <div class="skill-card glass-card">
-                <div class="skill-header">
-                    <span><i class="fas fa-database"></i> MongoDB</span>
-                    <span class="skill-pct">90%</span>
-                </div>
-                <div class="p-bar-bg"><div class="p-bar-fill" data-width="90%"></div></div>
+            <div class="p-bar-bg">
+                <div class="p-bar-fill" data-width="95%"></div>
             </div>
         </div>
-    </section>
 
+        <!-- CSS -->
+        <div class="skill-card glass-card">
+            <div class="skill-header">
+                <span><i class="fab fa-css3-alt"></i> CSS3</span>
+                <span class="skill-pct">92%</span>
+            </div>
+            <div class="p-bar-bg">
+                <div class="p-bar-fill" data-width="92%"></div>
+            </div>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="skill-card glass-card">
+            <div class="skill-header">
+                <span><i class="fab fa-js-square"></i> JavaScript</span>
+                <span class="skill-pct">88%</span>
+            </div>
+            <div class="p-bar-bg">
+                <div class="p-bar-fill" data-width="88%"></div>
+            </div>
+        </div>
+
+        <!-- React -->
+        <div class="skill-card glass-card">
+            <div class="skill-header">
+                <span><i class="fab fa-react"></i> React.js</span>
+                <span class="skill-pct">85%</span>
+            </div>
+            <div class="p-bar-bg">
+                <div class="p-bar-fill" data-width="85%"></div>
+            </div>
+        </div>
+
+        <!-- Node -->
+        <div class="skill-card glass-card">
+            <div class="skill-header">
+                <span><i class="fab fa-node-js"></i> Node.js & Express.js</span>
+                <span class="skill-pct">87%</span>
+            </div>
+            <div class="p-bar-bg">
+                <div class="p-bar-fill" data-width="87%"></div>
+            </div>
+        </div>
+
+        <!-- MongoDB -->
+        <div class="skill-card glass-card">
+            <div class="skill-header">
+                <span><i class="fas fa-database"></i> MongoDB</span>
+                <span class="skill-pct">85%</span>
+            </div>
+            <div class="p-bar-bg">
+                <div class="p-bar-fill" data-width="85%"></div>
+            </div>
+        </div>
+
+        <!-- Python -->
+        <div class="skill-card glass-card">
+            <div class="skill-header">
+                <span><i class="fab fa-python"></i> Python</span>
+                <span class="skill-pct">90%</span>
+            </div>
+            <div class="p-bar-bg">
+                <div class="p-bar-fill" data-width="90%"></div>
+            </div>
+        </div>
+
+        <!-- GitHub -->
+        <div class="skill-card glass-card">
+            <div class="skill-header">
+                <span><i class="fab fa-github"></i> Git & GitHub</span>
+                <span class="skill-pct">90%</span>
+            </div>
+            <div class="p-bar-bg">
+                <div class="p-bar-fill" data-width="90%"></div>
+            </div>
+        </div>
+
+        <!-- Azure -->
+        <div class="skill-card glass-card">
+            <div class="skill-header">
+                <span><i class="fas fa-cloud"></i> Microsoft Azure AI Fundamentals (AI-900)</span>
+                <span class="skill-pct">Certified</span>
+            </div>
+            <div class="p-bar-bg">
+                <div class="p-bar-fill" data-width="100%"></div>
+            </div>
+        </div>
+
+    </div>
+</section>
     <!-- 4. PROJECTS SECTION -->
     <section id="projects" class="reveal">
         <h2 class="section-title">[03] REPOSITORY_DEPLOYS</h2>
